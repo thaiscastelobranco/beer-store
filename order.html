@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Beer Store</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/form.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html">Home</a>
+            <a href="all-beers.html">See All Beers</a>
+            <a class="active" href="order.html">Order a Beer</a>
+            <a class="right" href="register.html">Register</a>
+            <a class="right" href="login.html">Log in</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <center>
+
+            <h1>Order a Beer</h1>
+
+            <form>
+                <p><span>Brand</span></p>
+                <select class="sizeable" name="brand">
+                    <option selected disabled>Select a Brand</option>
+                    <option value="1">Corona Extra 330ml</option>
+                    <option value="2">Stella Artois 500ml</option>
+                    <option value="3">Carlsberg 330ml</option>
+                    <option value="4">Heineken 33oml</option>
+                </select>
+                <br>
+                <p><label>Quantity</label></p>
+                <input class="sizeable" type="number" min="1" max="15" placeholder="Enter amount of beers (1-15)">
+                <br>
+                <p><label>Destination</label></p>
+                <input class="sizeable" type="text" min="1" max="50" placeholder="Select destination">
+                <br>
+                <p><label>Enter your birthdate</label></p>
+                <input class="sizeable" type="date" placeholder="aaaa-mm-dd">
+                <br>
+                <p><label>Got an opinion, comment, recommendation? Share it with us!</label></p>
+                <input class="comment" type="text" placeholder="Share your opinion with us!">
+                <br>
+                <input class="button" type="submit" value="Order">
+            </form>
+
+        </center>
+
+    </main>
+
+    <footer>
+        <hr />
+        <p><em>&copy; 2020 &ndash; Beer Store</em></p>
+    </footer>
+</body>
+
+</html>
